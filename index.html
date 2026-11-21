@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halcyon Residences — Above It All</title>
+<meta name="description" content="Halcyon Residences. Fifty-eight private residences from the 40th floor to the 62nd. Schedule a private viewing.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Six+Caps&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=h4">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ELEVATOR — persistent floor indicator (signature) -->
+<aside class="lift" id="lift" aria-hidden="true">
+  <div class="lift__arrow" id="liftArrow">▲</div>
+  <div class="lift__floor"><span id="liftNum">01</span></div>
+  <div class="lift__label" id="liftLabel">Lobby</div>
+  <div class="lift__shaft"><i id="liftCar"></i></div>
+</aside>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" aria-label="Halcyon home">
+    <svg viewBox="0 0 40 56" aria-hidden="true"><defs><linearGradient id="bz" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E2B97F"/><stop offset="1" stop-color="#A9773C"/></linearGradient></defs><rect x="4" y="2" width="9" height="52" fill="url(#bz)"/><rect x="27" y="10" width="9" height="44" fill="url(#bz)"/><rect x="13" y="27" width="14" height="3" fill="url(#bz)"/></svg>
+    <span>HALCYON</span>
+  </a>
+  <nav class="nav__links">
+    <a href="#residences">Residences</a>
+    <a href="#amenities">Amenities</a>
+    <a href="#interiors">Interiors</a>
+    <a href="#plan">Floor plans</a>
+  </nav>
+  <a href="#viewing" class="pill pill--bronze"><span>Private viewing</span></a>
+</header>
+
+<main id="top">
+
+<!-- ===== HERO — street to sky to terrace ===== -->
+<section class="hero" id="hero" data-floor-from="1" data-floor-to="62">
+  <div class="hero__sticky">
+    <div class="hero__frame">
+      <canvas class="hero__canvas"></canvas>
+      <img class="hero__poster" src="assets/img/a0.webp" alt="Halcyon tower at blue hour, rising from the street to the penthouse and its sky terrace">
+      <div class="hero__shade"></div><div class="hero__scrim"></div><div class="hero__dim"></div>
+    </div>
+
+    <div class="hero__ghost" aria-hidden="true">62</div>
+
+    <div class="beats">
+      <div class="beat beat--hero" data-in="0" data-out="0.05">
+        <p class="kicker">The city never stops. Up here, it does.</p>
+        <h1 class="mega"><span class="mega__fill">Above</span><br><span class="mega__fill">the <em>noise.</em></span></h1>
+        <p class="sub">Fifty-eight private residences, from the 40th floor to the 62nd.</p>
+        <div class="beat__ctas">
+          <a href="#viewing" class="pill pill--bronze"><span>Schedule a private viewing</span></a>
+          <span class="scrollhint">Scroll to rise <i></i></span>
+        </div>
+      </div>
+      <div class="beat beat--left" data-in="0.11" data-out="0.19">
+        <p class="kicker">Arrival · Valet &amp; private porte-cochère</p>
+        <h2 class="mega mega--md">Come home<br><em>unhurried.</em></h2>
+      </div>
+      <div class="beat beat--right" data-in="0.265" data-out="0.345">
+        <p class="kicker">The Lobby · 24-hour concierge</p>
+        <h2 class="mega mega--md">Greeted by name.<br><em>Every evening.</em></h2>
+      </div>
+      <div class="beat beat--left" data-in="0.51" data-out="0.59">
+        <p class="kicker">Private lift · 380 feet per minute</p>
+        <h2 class="mega mega--md">Every floor,<br><em>a little quieter.</em></h2>
+      </div>
+      <div class="beat beat--right" data-in="0.69" data-out="0.77">
+        <p class="kicker">Floor 62 · The Penthouse</p>
+        <h2 class="mega mega--md">Step inside.<br><em>You're home.</em></h2>
+      </div>
+      <div class="beat beat--final" data-in="0.93" data-out="1.01">
+        <p class="kicker">Private terrace · Infinity plunge pool</p>
+        <h2 class="mega">Above<br><em>it all.</em></h2>
+        <a href="#viewing" class="pill pill--glass"><span>Reserve your viewing</span></a>
+      </div>
+    </div>
+
+    <div class="hero__status">
+      <span class="tag" id="heroTag">Arrival</span>
+      <span class="hero__alt"><span id="heroFt">0</span> ft above the street</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INTRO STATEMENT ===== -->
+<section class="statement floor" data-floor="40" data-label="Residences begin">
+  <div class="doors"><i></i><i></i></div>
+  <div class="statement__grid">
+    <div class="statement__num" aria-hidden="true">40</div>
+    <div class="statement__copy">
+      <p class="kicker kicker--bronze">Floor 40 and above</p>
+      <h2 class="mega mega--md">Nothing below<br>but <em>city lights.</em></h2>
+      <p class="body">Halcyon begins where other towers end. No residence sits lower than the fortieth floor. Every one has open sky on at least three sides, and a private elevator that opens into your foyer.</p>
+    </div>
+    <figure class="statement__img"><img src="assets/img/facade.webp" alt="Bronze fins of the Halcyon facade rising into a blue dusk sky"></figure>
+  </div>
+  <div class="facts">
+    <div><b data-count="58">0</b><span>Private residences</span></div>
+    <div><b data-count="62">0</b><span>Floors</span></div>
+    <div><b data-count="360" data-suffix="°">0</b><span>Unbroken views</span></div>
+    <div><b data-count="24" data-suffix="h">0</b><span>Concierge &amp; valet</span></div>
+  </div>
+</section>
+
+<!-- ===== RESIDENCES — floor stack ===== -->
+<section class="residences floor" id="residences" data-floor="58" data-label="The residences">
+  <div class="doors"><i></i><i></i></div>
+  <header class="sec-head">
+    <p class="kicker kicker--bronze">The Residences</p>
+    <h2 class="mega mega--md">Four ways<br>to <em>live up here.</em></h2>
+  </header>
+  <div class="stack">
+    <a class="slab" href="#viewing" style="--i:0">
+      <span class="slab__num">44</span>
+      <div class="slab__info"><h3>Two Bedroom</h3><p>1,780 sq ft · Sunrise exposure</p></div>
+      <span class="slab__price">from $2.4M</span>
+      <figure class="slab__img"><img src="assets/img/suite.webp" alt="Two bedroom residence primary suite above the clouds"></figure>
+    </a>
+    <a class="slab" href="#viewing" style="--i:1">
+      <span class="slab__num">51</span>
+      <div class="slab__info"><h3>Three Bedroom</h3><p>2,640 sq ft · Corner great room</p></div>
+      <span class="slab__price">from $3.9M</span>
+      <figure class="slab__img"><img src="assets/img/kitchen.webp" alt="Three bedroom residence kitchen at dusk"></figure>
+    </a>
+    <a class="slab" href="#viewing" style="--i:2">
+      <span class="slab__num">58</span>
+      <div class="slab__info"><h3>Sky Home</h3><p>3,900 sq ft · Full-floor, 360° glass</p></div>
+      <span class="slab__price">from $6.8M</span>
+      <figure class="slab__img"><img src="assets/img/k3.webp" alt="Sky Home living room with fireplace and city view"></figure>
+    </a>
+    <a class="slab slab--ph" href="#viewing" style="--i:3">
+      <span class="slab__num">62</span>
+      <div class="slab__info"><h3>The Penthouse</h3><p>7,200 sq ft · Private terrace &amp; pool</p></div>
+      <span class="slab__price">Price on request</span>
+      <figure class="slab__img"><img src="assets/img/k4.webp" alt="Penthouse sky terrace with glowing infinity pool"></figure>
+    </a>
+  </div>
+</section>
+
+<!-- ===== AMENITIES — building section (the one pinned moment) ===== -->
+<section class="amenities floor" id="amenities" data-floor="1" data-label="The Lobby">
+  <div class="amen__pin">
+    <div class="amen__left">
+      <p class="kicker kicker--bronze">Amenities</p>
+      <h2 class="mega mega--md">A private club<br><em>on every level.</em></h2>
+      <ol class="amen__list">
+        <li class="is-on" data-a="0"><span>L1</span>The Lobby<small>Double-height travertine, 24-hour concierge</small></li>
+        <li data-a="1"><span>L3</span>The Spa<small>25-metre lap pool, hammam, treatment suites</small></li>
+        <li data-a="2"><span>L12</span>The Cellar<small>Private wine room &amp; tasting table</small></li>
+        <li data-a="3"><span>L63</span>The Sky Lounge<small>Residents' bar above the skyline</small></li>
+      </ol>
+    </div>
+    <div class="amen__tower" aria-hidden="true">
+      <svg viewBox="0 0 120 600" preserveAspectRatio="xMidYMax meet">
+        <path class="tw" d="M30 600 V60 L60 8 L90 60 V600"/>
+        <path class="tw tw--fin" d="M45 600 V40 M60 600 V14 M75 600 V40"/>
+        <g class="floors"></g>
+        <circle class="hot" cx="60" cy="590" r="5"/>
+      </svg>
+    </div>
+    <div class="amen__media">
+      <figure class="am" data-a="0"><img src="assets/img/lobby.webp" alt="Double-height travertine lobby with crystal chandelier"></figure>
+      <figure class="am" data-a="1"><img src="assets/img/pool.webp" alt="Residents' spa lap pool glowing turquoise"></figure>
+      <figure class="am" data-a="2"><img src="assets/img/wine.webp" alt="Private wine room with bronze wine wall"></figure>
+      <figure class="am" data-a="3"><img src="assets/img/lounge.webp" alt="Sky lounge at dusk above the city"></figure>
+      <div class="am__cap"><span id="amNo">01</span>/04</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INTERIORS — depth collage ===== -->
+<section class="interiors floor" id="interiors" data-floor="61" data-label="Interiors">
+  <div class="doors"><i></i><i></i></div>
+  <div class="interiors__word" aria-hidden="true">INTERIORS</div>
+  <div class="collage">
+    <figure class="cl cl--a" data-speed="-0.12"><img src="assets/img/k3.webp" alt="Penthouse living room"></figure>
+    <figure class="cl cl--b" data-speed="0.18"><img src="assets/img/kitchen.webp" alt="Penthouse kitchen with quartzite island"></figure>
+    <figure class="cl cl--c" data-speed="0.32"><img src="assets/img/suite.webp" alt="Primary suite at sunrise"></figure>
+    <div class="collage__note">
+      <p class="kicker kicker--bronze">Designed in-house</p>
+      <h3>Smoked oak. Book-matched marble. <em>Bronze that warms with age.</em></h3>
+      <p class="body">Every residence is delivered finished to the last hinge, down to the linen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FLOOR PLAN ===== -->
+<section class="plan floor" id="plan" data-floor="62" data-label="Penthouse plan">
+  <div class="plan__grid">
+    <div class="plan__copy">
+      <p class="kicker kicker--bronze">Floor 62 · The Penthouse</p>
+      <h2 class="mega mega--md">The whole<br><em>top floor.</em></h2>
+      <dl class="specs">
+        <div><dt>Interior</dt><dd>7,200 sq ft</dd></div>
+        <div><dt>Terrace</dt><dd>2,150 sq ft</dd></div>
+        <div><dt>Bedrooms</dt><dd>5 + library</dd></div>
+        <div><dt>Ceilings</dt><dd>14 ft</dd></div>
+      </dl>
+      <a href="#viewing" class="pill pill--bronze"><span>Request the full plan set</span></a>
+    </div>
+    <div class="plan__svg">
+      <svg viewBox="0 0 640 440" fill="none">
+        <g class="pl pl--outer"><path d="M20 20 H620 V420 H20 Z"/></g>
+        <g class="pl"><path d="M20 160 H260 V20"/><path d="M260 160 V420"/><path d="M380 20 V250 H620"/><path d="M380 250 V420"/><path d="M260 300 H380"/><path d="M120 160 V300 H20"/><path d="M500 250 V420"/></g>
+        <g class="pl pl--pool"><rect x="430" y="60" width="160" height="34" rx="2"/></g>
+        <g class="pl pl--dash"><path d="M380 20 H620 V250" stroke-dasharray="4 6"/></g>
+        <g class="pl__lbl">
+          <text x="140" y="95">GREAT ROOM</text><text x="45" y="240">LIBRARY</text><text x="285" y="95">KITCHEN</text>
+          <text x="455" y="150">TERRACE</text><text x="455" y="80" class="sm">POOL</text><text x="140" y="370">PRIMARY SUITE</text>
+          <text x="280" y="370">FOYER</text><text x="410" y="340">BED 2</text><text x="525" y="340">BED 3</text>
+        </g>
+        <circle class="pl__dot" cx="320" cy="360" r="5"/>
+      </svg>
+      <span class="plan__n">N ↑</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA — doors open onto the terrace ===== -->
+<section class="viewing floor" id="viewing" data-floor="62" data-label="Private viewing">
+  <div class="viewing__media"><img src="assets/img/k4.webp" alt="Sky terrace pool at night"><div class="viewing__shade"></div></div>
+  <div class="vdoor vdoor--l"></div><div class="vdoor vdoor--r"></div>
+  <div class="viewing__inner">
+    <p class="kicker">By appointment only · Eleven residences remain</p>
+    <h2 class="mega mega--xl">See it from<br><em>the top.</em></h2>
+    <form class="vform" onsubmit="return false">
+      <input type="text" placeholder="Your name" aria-label="Your name">
+      <input type="tel" placeholder="Phone" aria-label="Phone">
+      <button class="pill pill--bronze" type="submit"><span>Schedule a private viewing</span></button>
+    </form>
+    <a href="tel:2125550162" class="viewing__tel">or call the sales gallery · (212) 555-0162</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__word" aria-hidden="true">HALCYON</div>
+  <div class="foot__row">
+    <span>Halcyon Residences — Concept prototype</span>
+    <span>Sales gallery by appointment · sales@halcyon.residences</span>
+    <span>© 2026</span>
+  </div>
+</footer>
+
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/vendor/lenis.min.js"></script>
+<script src="assets/vendor/scenes.js?v=h3"></script>
+<script src="app.js?v=h1"></script>
+</body>
+</html>
